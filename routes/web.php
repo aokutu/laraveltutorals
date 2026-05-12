@@ -6,12 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Models\Student;
 
+
 Route::get('/students', function () {
 
     $students = Student::all();
 
-   return view('students', compact('students'));
-}); 
+    return view('students', compact('students'));
+});
 
 
 Route::get('/', function () {
